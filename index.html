@@ -1,135 +1,189 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Climate Quest</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" type="image/x-icon" href="images/favicon.png" />
+    <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Climate Quest</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="icon" type="image/x-icon" href="images/favicon.png" />
-  <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
-
-</head>
-
-<body>
-  <nav class="navbar navbar-expand-lg sticky-top" id="navbar">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#home">CLIMATE QUEST</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+  <body>
+    <nav class="navbar navbar-expand-lg sticky-top" id="navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#home">CLIMATE QUEST</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#cards">Personajes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#requisitos">Requisitos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#comic">Comic</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/foto2.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="images/foto1.jpg" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="images/foto3.jpg" class="d-block w-100" alt="..." />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#cards">Personajes</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#requisitos">Requisitos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#comic">Comic</a>
-          </li>
-        </ul>
-      </div>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-  </nav>
-  <div id="carouselExample" class="carousel slide">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="images/foto1.jpg" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="images/foto2.jpg" class="d-block w-100" alt="...">
-      </div>
-      <div class="carousel-item">
-        <img src="images/foto3.jpg" class="d-block w-100" alt="...">
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
 
-  <div class="container mt-5" id="cards">
-    <h1>PERSONAJES</h1>
-    <div class="row row-cols-1 row-cols-md-3 g-4">
-      <div class="col">
-        <div class="card h-100">
-          <img src="images/foto4.png" class="card-img-top img-fluid" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Juan</h5>
-            <p class="card-text">Juan, el valiente defensor del medio ambiente, lucha contra la contaminación y el mal
-              que amenaza nuestro mundo.</p>
+    <div class="container-fluid " id="cards">
+      <h1>PERSONAJES</h1>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="images/foto4.png"
+              class="card-img-top img-fluid"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Juan</h5>
+              <p class="card-text">
+                Juan, el valiente defensor del medio ambiente, lucha contra la
+                contaminación y el mal que amenaza nuestro mundo.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col">
-        <div class="card h-100">
-          <img src="images/foto5.png" class="card-img-top img-fluid" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">NPC</h5>
-            <p class="card-text">Durante su épica travesía, Juan encontrará a varios NPC que necesitarán su ayuda para
-              enfrentar los desafíos que les aguardan.</p>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="images/foto5.png"
+              class="card-img-top img-fluid"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">NPC</h5>
+              <p class="card-text">
+                Durante su épica travesía, Juan encontrará a varios NPC que
+                necesitarán su ayuda para enfrentar los desafíos que les
+                aguardan.
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col">
-        <div class="card h-100">
-          <img src="images/foto6.png" class="card-img-top img-fluid" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Enemigos</h5>
-            <p class="card-text">Los enemigos que se interponen en el camino de Juan son una criaturas tenebrosas que
-              representan la corrupción y la contaminación desenfrenada.</p>
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="images/foto6.png"
+              class="card-img-top img-fluid"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Enemigos</h5>
+              <p class="card-text">
+                Los enemigos que se interponen en el camino de Juan son una
+                criaturas tenebrosas que representan la corrupción y la
+                contaminación desenfrenada.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="container-fluid" id="requisitos">
-    <div class="row">
-      <div class="col-lg-6 col-md-12" id="panel">
-        <h1>CLIMATE QUEST PARA ANDROID</h1>
-        <p>La aventura de Juan próximamente disponible con optimizaciones para jugadores de Android.</p>
-        <h5>Características para ANDROID:</h5>
-        <p>Android 7.0 en adelante</p>
-        <p>Gráficos de alta fidelidad</p>
-        <p>Controles táctiles</p>
-      </div>
-      <div class="col-lg-6 col-md-12">
-        <div class="embed-responsive embed-responsive-16by9">
-          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/0OGf00N-q3E" 
-          style="width: 100%; height: 300px" allowfullscreen></iframe>
+    <div class="container-fluid" id="requisitos">
+      <div class="row">
+        <div class="col-lg-6 col-md-12" id="panel">
+          <h1>CLIMATE QUEST PARA ANDROID</h1>
+          <p>
+            La aventura de Juan próximamente disponible con optimizaciones para
+            jugadores de Android.
+          </p>
+          <h5>Características para ANDROID:</h5>
+          <p>⚪ Android 7.0 en adelante</p>
+          <p>⚪ Gráficos de alta fidelidad</p>
+          <p>⚪ Controles táctiles</p>
+        </div>
+        <div class="col-lg-6 col-md-12">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe
+              class="embed-responsive-item"
+              src="https://www.youtube.com/embed/0OGf00N-q3E"
+              style="width: 100%; height: 300px"
+              allowfullscreen
+            ></iframe>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  
-  <div class="container-fluid" id="comic">
-    <div class="row justify-content-center">
-      <div class="col-md-8">
-        <img src="images/comic.jpeg" class="img-fluid" style="max-width: 100%" alt="Comic">
+
+    <div class="container-fluid" id="comic">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <img
+            src="images/comic.jpeg"
+            class="img-fluid"
+            style="max-width: 100%"
+            alt="Comic"
+          />
+        </div>
+      </div>
+      <div class="container text-center">
+        <span class="text-muted"
+          >© 2024 Climate Quest. Todos los derechos reservados.</span
+        >
       </div>
     </div>
-    <div class="container text-center">
-      <span class="text-muted">© 2024 Climate Quest. Todos los derechos reservados.</span>
-    </div>
-  </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </body>
 </html>

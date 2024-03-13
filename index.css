@@ -21,40 +21,35 @@
   height: 300px;
   width: 100%;
 }
-#carouselExampleIndicators {
-  margin-bottom: 80px;
-}
 #cards {
-  margin-bottom: 50px;
+
+  background-color: #f8f9fa; /* Color de fondo del navbar */
+  height: auto;
+  width: 100%;
+  padding: 120px;
 }
 #comic {
-  background-image: url('images/fondo3.jpg'); /* Ruta de la imagen de fondo */
+  background-image: url("images/fondo3.jpg"); /* Ruta de la imagen de fondo */
   background-size: cover; /* Ajustar la imagen para cubrir todo el contenedor */
   background-position: center; /* Centrar la imagen */
   background-blend-mode: hue; /* Aplicar blend mode como multiplicar */
   background-color: rgba(255, 255, 255, 0.911);
   padding-top: 60px;
 }
-h1{
+h1 {
   text-align: left;
   text-wrap: pretty;
   margin-bottom: 20px;
-
-  
 }
-iframe{
+iframe {
   border-radius: 12px;
 }
 #requisitos {
-  background-image: url('images/fondo.jpg'); /* Ruta de la imagen de fondo */
-  background-size: cover; /* Ajustar la imagen para cubrir todo el contenedor */
-  background-position: center; /* Centrar la imagen */
-  background-blend-mode: hue; /* Aplicar blend mode como multiplicar */
-  background-color: rgba(255, 255, 255, 0.24);
+background-color: #7EBF2A;
   height: auto;
   width: 100%;
-  margin-top: 20px;
   padding: 120px;
+
 }
 
 #requisitos p {
@@ -62,22 +57,24 @@ iframe{
   margin-top: 10px;
   font-weight: 500;
 }
-#panel{
-  background-color: #ebeef0a2;
-  padding: 20px;
-  border-radius: 12px;
-}
 .card-img-top {
   height: 300px; /* Establece la altura deseada para todas las imágenes */
   object-fit: cover; /* Ajusta la imagen dentro del contenedor sin deformarla */
-  p{
+  p {
+    text-wrap: pretty;
+  }
+}
+.d-block {
+  height: 550px; /* Establece la altura deseada para todas las imágenes */
+  object-fit: cover; /* Ajusta la imagen dentro del contenedor sin deformarla */
+  p {
     text-wrap: pretty;
   }
 }
 .navbar {
   background-color: #f8f9fa; /* Color de fondo del navbar */
 }
-.navbar-brand{
+.navbar-brand {
   padding-left: 25px;
 }
 
@@ -97,6 +94,6 @@ iframe{
 }
 
 .nav-item:hover {
-  background-color: #e9ecef; /* Color de fondo al pasar el mouse por encima */
+  background-color: #97D038; /* Color de fondo al pasar el mouse por encima */
   border-radius: 6%;
 }
