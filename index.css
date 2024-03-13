@@ -25,8 +25,78 @@
   margin-bottom: 80px;
 }
 #cards {
-  margin-bottom: 70px;
+  margin-bottom: 50px;
 }
 #comic {
-  margin-top: 80px;
+  background-image: url('images/fondo3.jpg'); /* Ruta de la imagen de fondo */
+  background-size: cover; /* Ajustar la imagen para cubrir todo el contenedor */
+  background-position: center; /* Centrar la imagen */
+  background-blend-mode: hue; /* Aplicar blend mode como multiplicar */
+  background-color: rgba(255, 255, 255, 0.911);
+  padding-top: 60px;
+}
+h1{
+  text-align: left;
+  text-wrap: pretty;
+  margin-bottom: 20px;
+
+  
+}
+iframe{
+  border-radius: 12px;
+}
+#requisitos {
+  background-image: url('images/fondo.jpg'); /* Ruta de la imagen de fondo */
+  background-size: cover; /* Ajustar la imagen para cubrir todo el contenedor */
+  background-position: center; /* Centrar la imagen */
+  background-blend-mode: hue; /* Aplicar blend mode como multiplicar */
+  background-color: rgba(255, 255, 255, 0.24);
+  height: auto;
+  width: 100%;
+  margin-top: 20px;
+  padding: 120px;
+}
+
+#requisitos p {
+  text-align: left;
+  margin-top: 10px;
+  font-weight: 500;
+}
+#panel{
+  background-color: #ebeef0a2;
+  padding: 20px;
+  border-radius: 12px;
+}
+.card-img-top {
+  height: 300px; /* Establece la altura deseada para todas las imágenes */
+  object-fit: cover; /* Ajusta la imagen dentro del contenedor sin deformarla */
+  p{
+    text-wrap: pretty;
+  }
+}
+.navbar {
+  background-color: #f8f9fa; /* Color de fondo del navbar */
+}
+.navbar-brand{
+  padding-left: 25px;
+}
+
+.nav-item {
+  text-align: center; /* Centra el texto de los items del navbar */
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.navbar-nav {
+  width: 100%; /* Asegura que el navbar ocupe todo el ancho disponible */
+  padding-left: 260px;
+}
+
+.nav-item {
+  transition: background-color 0.3s; /* Agrega una transición para el cambio de color de fondo */
+}
+
+.nav-item:hover {
+  background-color: #e9ecef; /* Color de fondo al pasar el mouse por encima */
+  border-radius: 6%;
 }
